@@ -11,42 +11,38 @@ body {
     background-color: #1A2A6C; /* Navy Blue */
     color: #D4AF37; /* Gold */
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    flex-direction: column;
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
+    overflow-y: auto; /* Enables scrolling */
 }
 
 .container {
     background: #A7C7A2; /* Sage Green */
-    padding: 40px;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-    max-width: 600px;
+    max-width: 800px;
     width: 90%;
+    margin: 20px auto;
 }
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 1000;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 p {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.8;
+    text-align: justify;
+    max-width: 100%;
 }
 
+/* Updated Button Styling */
 button {
     background-color: #A7C7A2; /* Sage Green */
     color: #1A2A6C; /* Navy Blue */
@@ -59,7 +55,13 @@ button {
     font-weight: bold;
 }
 
-/* Updated .intro-button */
+/* Remove Hover Effect */
+button:hover {
+    background-color: #A7C7A2; /* Same color, no change */
+    transform: none;
+}
+
+/* Updated Intro Button */
 .intro-button {
     display: inline-block;
     background-color: #A7C7A2; /* Sage Green */
@@ -70,6 +72,13 @@ button {
     font-weight: bold;
     text-decoration: none;
 }
+
+/* Ensure the text container is scrollable */
+.text-container {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
 }
     </style>
 </head>
