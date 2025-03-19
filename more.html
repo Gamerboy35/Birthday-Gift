@@ -5,46 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy Birthday, Nancy!</title>
 <style>
-       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
 
 body {
     background-color: #1A2A6C; /* Navy Blue */
     color: #D4AF37; /* Gold */
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
-    overflow-y: auto; /* Enables scrolling */
 }
 
 .container {
     background: #A7C7A2; /* Sage Green */
-    padding: 30px;
+    padding: 40px;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-    max-width: 800px;
+    max-width: 600px;
     width: 90%;
-    margin: 20px auto;
 }
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 1000;
     margin-bottom: 15px;
-    text-align: center;
 }
 
 p {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.8;
-    text-align: justify;
-    max-width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
 }
 
 button {
-    background-color: #D4AF37;
-    color: #1A2A6C;
+    background-color: #A7C7A2; /* Sage Green */
+    color: #1A2A6C; /* Navy Blue */
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
@@ -52,8 +57,9 @@ button {
     cursor: pointer;
     margin-top: 15px;
     font-weight: bold;
-    transition: 0.3s;
 }
+
+/* Updated .intro-button */
 .intro-button {
     display: inline-block;
     background-color: #A7C7A2; /* Sage Green */
@@ -63,12 +69,7 @@ button {
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    transition: 0.3s;
 }
-
-.intro-button:hover {
-    background-color: #D4AF37;
-    transform: scale(1.05);
 }
     </style>
 </head>
